@@ -29,7 +29,7 @@ app.layout = html.Div([
             html.Label("Initial Capital ($):"),
             dcc.Dropdown(
                 id='capital-dropdown',
-                options=[{'label': f"${i:,}", 'value': i} for i in range(100000, 500001, 5000)],
+                options=[{'label': f"${i:,}", 'value': i} for i in range(100000, 500001, 1000)],
                 value=250000,
                 clearable=False,
                 style={'width': '150px'}
@@ -40,7 +40,7 @@ app.layout = html.Div([
             html.Label("Annual Withdrawal ($):"),
             dcc.Dropdown(
                 id='withdrawal-dropdown',
-                options=[{'label': f"${i:,}", 'value': i} for i in range(10000, 30001, 500)],
+                options=[{'label': f"${i:,}", 'value': i} for i in range(10000, 30001, 250)],
                 value=22000,
                 clearable=False,
                 style={'width': '150px'}
